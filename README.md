@@ -78,7 +78,7 @@ The extension is free and will always be free. If you'd like to support ongoing 
 
 You're not just supporting a tool — you're helping put meals on tables.
 
-[Support on Patreon](https://patreon.com/HermanMyburgh) · [Donate via PayPal](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-04Y62281CE859115PNBA4KSI)
+[Support via Yoco](https://pay.yoco.com/herman-myburgh-christian-dad) · [Support via Ko-Fi](https://ko-fi.com/hermanmyburgh)
 
 ## Contributing
 
