@@ -88,11 +88,11 @@ Bug reports, feature suggestions, and pull requests are welcome. Please [open an
 
 - **Email:** herman.myburgh1@gmail.com
 - **Issues:** [GitHub Issues](../../issues)
-- **Website:** [diegrootinduna.github.io/familystreamfilter](https://diegrootinduna.github.io/familystreamfilter/)
+- **Website:** [https://diegrootinduna.github.io/streamingwordfilter/](https://diegrootinduna.github.io/streamingwordfilter/)
 
 ## License
 
-Licensed under the [GNU General Public License v3.0](LICENSE). Copyright © 2025 Herman Myburgh.
+Licensed under the [GNU General Public License v3.0](LICENSE). Copyright © 2026 Herman Myburgh.
 
 This means you're free to use, modify, and redistribute the code, but any distributed modifications must also be released under GPL-3.0 and made available as source. This protects the extension and its mission from being silently absorbed into closed-source or commercially rebranded forks.
 
