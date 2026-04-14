@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Story — Streaming Word Filter</title>
+<meta name="description" content="Why a Christian dad in South Africa built a free Chrome extension to mute profanity on Netflix, Disney+, Showmax and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF3E3;
+    --burgundy: #4A1818;
+    --burgundy-soft: #6B2B2B;
+    --gold: #E8A73C;
+    --ink: #2B1010;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 72px 28px 96px;
+  }
+  .back {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--burgundy-soft);
+    text-decoration: none;
+    margin-bottom: 48px;
+    letter-spacing: 0.02em;
+  }
+  .back:hover { color: var(--burgundy); }
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 20px;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(34px, 5vw, 48px);
+    line-height: 1.15;
+    color: var(--burgundy);
+    margin: 0 0 56px;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.3;
+    color: var(--burgundy);
+    margin: 56px 0 20px;
+    letter-spacing: -0.005em;
+  }
+  p { margin: 0 0 22px; color: var(--ink); }
+  .lead {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--burgundy);
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+  .rule {
+    width: 48px;
+    height: 2px;
+    background: var(--gold);
+    border: none;
+    margin: 56px 0;
+  }
+  .signoff {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--burgundy);
+    margin-top: 48px;
+  }
+  .signoff .name { display: block; font-weight: 600; margin-top: 4px; }
+  .signoff .tag {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 6px;
+  }
+  .cta {
+    margin-top: 64px;
+    padding: 32px;
+    background: var(--burgundy);
+    color: var(--cream);
+    border-radius: 4px;
+  }
+  .cta h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 0 12px;
+    color: var(--cream);
+  }
+  .cta p { color: #F0E7D4; font-size: 16px; margin-bottom: 20px; }
+  .cta a {
+    display: inline-block;
+    padding: 12px 22px;
+    background: var(--gold);
+    color: var(--burgundy);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+  .cta a.ghost {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 48px 22px 72px; }
+    body { font-size: 17px; }
+    .lead { font-size: 20px; }
+    .cta a { display: block; margin-right: 0; margin-bottom: 10px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back" href="index.html">← Back to Streaming Word Filter</a>
+
+    <p class="eyebrow">The Story</p>
+    <h1>Why I built this</h1>
+
+    <p class="lead">We were watching Virgin River.</p>
+
+    <p>It was one of those ordinary evenings — my eleven-year-old daughter next to me on the couch, a show we'd been enjoying together, the kind of small ritual that makes a family feel like a family. And then a character took the name of Jesus in vain.</p>
+
+    <p>I felt my daughter flinch before I did.</p>
+
+    <p>We stopped the episode. We didn't go back to the series. And for a few days afterwards I kept thinking about how strange it was that with all the technology at our fingertips, a Christian family still had to choose between the stories they wanted to share and the words they didn't want in their home.</p>
+
+    <h2>Why this, why me</h2>
+
+    <p>I'm a researcher by training. I lecture at the University of Johannesburg, where most of my work these days is in extended reality — the study of how technology shapes the way we experience the world around us. I've spent years thinking about the invisible ways media forms us: what we consume, how it lands, what it leaves behind.</p>
+
+    <p>So when I couldn't find a tool that did this one simple thing — let a family mute specific words on the services they already pay for — I decided to build it myself.</p>
+
+    <p>Streaming Word Filter reads the captions on Netflix, Disney+, Showmax, Amazon Prime, HBO Max, YouTube, Hulu, Peacock, and Paramount+. When a word you've chosen to filter is about to be spoken, it mutes that moment and shows a brief overlay. You don't lose the story. You just skip the parts you'd rather not bring into your living room.</p>
+
+    <p>It works on any word you add. Profanity, blasphemy, slurs, or something specific to your own household — you decide. That part matters to me. This isn't about telling other families what to filter. It's about giving each family back the choice their grandparents had without thinking about it, and that streaming took away.</p>
+
+    <h2>Why it's free, and why it always will be</h2>
+
+    <p>I had to decide early on what kind of project this was going to be. I could have charged for it. A few people told me I should.</p>
+
+    <p>But the families who need this most are often the ones stretching every rand. Young parents, big households, people who already feel like the culture is pulling in one direction and their home is pulling in another. Charging them for the privilege of a cleaner evening on the couch felt wrong to me, in a way I couldn't argue myself out of.</p>
+
+    <p>So the extension is free. It will stay free.</p>
+
+    <p>If it helps your family and you'd like to give something back, there's a Ko-fi page and a Yoco link. Half of every donation goes to the food programme at <strong>Elohim Meyersdal Community Church</strong>, which provides monthly food packs to more than 800 families in our community. The other half keeps this project alive — new platforms, new features, the quiet ongoing work of keeping a piece of software running well.</p>
+
+    <p>I like that model. It means the same tool that helps a family in Cape Town or Cleveland enjoy a quieter movie night is also helping a family in Meyersdal put dinner on the table. A small loop of care, from one home to another.</p>
+
+    <hr class="rule">
+
+    <h2>What I hope</h2>
+
+    <p>I hope this gives your family back some of the shows you'd written off. I hope it makes your lounge feel a little more like your lounge. And if one day my daughter builds something of her own because she watched her dad try to build something useful for other people, that will be worth more than any of the rest of it.</p>
+
+    <p>Thank you for being here.</p>
+
+    <div class="signoff">
+      With warmth,
+      <span class="name">Herman Myburgh</span>
+      <span class="tag">Christian Dad Presents</span>
+    </div>
+
+    <div class="cta">
+      <h3>Try it with your family</h3>
+      <p>Streaming Word Filter is free on the Chrome Web Store. If it blesses your home and you'd like to support the work — and the families it feeds — every bit helps.</p>
+      <a href="https://chrome.google.com/webstore" target="_blank" rel="noopener">Get the Extension</a>
+      <a href="https://ko-fi.com/" class="ghost" target="_blank" rel="noopener">Support on Ko-fi</a>
+    </div>
+  </main>
+</body>
+</html>
